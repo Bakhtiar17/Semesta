@@ -37,7 +37,8 @@
                                 <?php echo $_SESSION['er']; ?>
                             </div>
                         <?php } ?>
-                        <form id="w0" class="php-email-form" action="<?php base_url() ?>index.php/C_loginDosen/authuser1" method="POST">
+                        <form id="w0" class="php-email-form" action="<?php echo base_url().'C_loginDosen/authuser1';?>"
+                            method="post">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <div class="form-group field-loginform-username required">

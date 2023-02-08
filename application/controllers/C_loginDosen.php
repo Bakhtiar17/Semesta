@@ -26,7 +26,6 @@ class C_loginDosen extends CI_Controller
 
     public function authuser1()
     {
-        
         $this->load->model('M_biodata');
         $bio = $this->M_biodata;
 
@@ -66,7 +65,7 @@ class C_loginDosen extends CI_Controller
 
         if ($sta == "error") {
             $this->session->set_flashdata('er', 'NIK/Password anda salah atau tidak ditemukan');
-            redirect('C_loginDosen/');
+            redirect('C_loginDosen/', 'refresh');
 
         }
 
